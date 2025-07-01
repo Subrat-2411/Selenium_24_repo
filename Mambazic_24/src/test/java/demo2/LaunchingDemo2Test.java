@@ -11,6 +11,7 @@ public class LaunchingDemo2Test {
 	public void launch()
 	{
 		WebDriver driver=new ChromeDriver();
+		driver.manage().window().maximize();
 		driver.close();
 	}
 }

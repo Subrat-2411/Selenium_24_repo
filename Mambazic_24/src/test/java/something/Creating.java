@@ -14,6 +14,7 @@ public class Creating {
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 		driver.get("https://www.flipkart.com/");
+		driver.getTitle();
 		driver.close();
 	}
 }

@@ -11,7 +11,7 @@ public class YamahaTest {
 		WebDriver driver = null;
 
 		String browser = System.getProperty("browser");
-		if (browser.equals("Chrome"))
+		if (browser.equals("chrome"))
 			driver = new ChromeDriver();
 		driver.get("https://www.yamaha-motor-india.com/");
 		Reporter.log("Yamaha Launched", true);

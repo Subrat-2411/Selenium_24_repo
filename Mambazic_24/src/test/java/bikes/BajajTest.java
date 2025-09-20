@@ -12,7 +12,7 @@ public class BajajTest {
 		WebDriver driver = null; 
 		
 		String browser = System.getProperty("browser");
-		if(browser.equals("Chrome"))
+		if(browser.equals("chrome"))
 			driver=new ChromeDriver();
 		
 		driver.get("https://www.bajajauto.com/bikes");

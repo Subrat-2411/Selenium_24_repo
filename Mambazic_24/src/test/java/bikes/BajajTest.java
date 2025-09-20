@@ -9,9 +9,17 @@ public class BajajTest {
 	@Test
 	public void launch()
 	{
-		WebDriver driver=new ChromeDriver();
+		WebDriver driver = null; 
+		
+		String browser = System.getProperty("browser");
+		if(browser.equals("Chrome"))
+			driver=new ChromeDriver();
+		
 		driver.get("https://www.bajajauto.com/bikes");
+		
 		Reporter.log("Bajaj Launched", true);
+		
+		
 		driver.close();
 
 	}

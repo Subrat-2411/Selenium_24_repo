@@ -9,8 +9,11 @@ public class RoyalTest {
 	@Test
 	public void launch()
 	{
-		WebDriver driver=new ChromeDriver();
-		driver.get("https://www.royalenfield.com/");
+       WebDriver driver = null; 
+		
+		String browser = System.getProperty("browser");
+		if(browser.equals("Chrome"))
+			driver=new ChromeDriver();		driver.get("https://www.royalenfield.com/");
 		Reporter.log("Royal Launched", true);
 		driver.close();
 

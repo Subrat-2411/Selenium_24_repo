@@ -7,9 +7,12 @@ import org.testng.annotations.Test;
 
 public class YamahaTest {
 	@Test
-	public void launch()
-	{
-		WebDriver driver=new ChromeDriver();
+	public void launch() {
+		WebDriver driver = null;
+
+		String browser = System.getProperty("browser");
+		if (browser.equals("Chrome"))
+			driver = new ChromeDriver();
 		driver.get("https://www.yamaha-motor-india.com/");
 		Reporter.log("Yamaha Launched", true);
 		driver.close();
